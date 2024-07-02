@@ -1,0 +1,48 @@
+.root {
+  background-color: rgb(18, 18, 150);
+  width: 100%;
+  height: 100vh;
+  padding: 25px;
+}
+
+
+
+.day {
+  min-width: 80px;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 20px;
+  border: 1px solid white;
+  background-color: rgb(3, 3, 85);
+  color: white;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.day:hover {
+  transform: translateY(5px);
+}
+
+.day__number {
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.day--active {
+  background-color: white;
+  color: rgb(3, 3, 85);
+  animation: day-active 1s;
+}
+
+@keyframes day-active {
+    from{
+        transform: scale(1.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
